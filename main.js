@@ -57,8 +57,12 @@ function createList() {
     deleteBtn.addEventListener("click", message)
 
     function deleteList(){
-        li.classList.add("delete");
-        console.log(arr.shift[input.value])    
+        
+        let sure = confirm("Are you sure you want to delete?");
+if (sure) {
+//continue with delete code
+li.classList.add("delete");
+}  
     } 
     function message() {
         console.log
